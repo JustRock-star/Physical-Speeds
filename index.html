@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ճանապարհորդություն տիեզերքում և Երկրի վրա՝ արագությունների աշխարհով։"
+    />
+    <meta name="theme-color" content="#090b1c" />
+    <title>Արագությունների տիեզերք</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="universe" aria-hidden="true">
+      <div class="stars stars-back"></div>
+      <div class="stars stars-front"></div>
+      <div class="nebula nebula-one"></div>
+      <div class="nebula nebula-two"></div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Արագությունների տիեզերք՝ գլխավոր էջ">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>ՖԻԶԻԿԱ <span class="brand-divider">/</span> ՏԻԵԶԵՐՔ</span>
+      </a>
+      <nav class="top-nav" aria-label="Գլխավոր նավիգացիա">
+        <a class="top-link" href="index.html#journey" aria-current="page">Արագություններ</a>
+        <a class="top-link" href="facts.html">Փաստեր</a>
+        <a class="top-link" href="inertia.html">Իներցիաներ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> ՄԵԾՈՒԹՅՈՒՆՆԵՐԻ ԱՇԽԱՐՀ</p>
+          <h1 id="page-title">Որքա՞ն արագ է<br /><span>տիեզերքը</span></h1>
+          <p class="hero-description">
+            Մի փոքրիկ քայլից մինչև լույսի անհավանական արագությունը։
+            Շարժվիր քարտերով ու բացահայտիր, թե ինչ է նշանակում արագ լինել։
+          </p>
+          <a class="explore-link" href="#journey">
+            <span class="explore-icon" aria-hidden="true">↓</span>
+            <span>ԲԱՑԱՀԱՅՏԵԼ ԱՐԱԳՈՒԹՅՈՒՆՆԵՐԸ</span>
+          </a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="planet-ring ring-outer"></div>
+          <div class="planet-ring ring-inner"></div>
+          <div class="planet">
+            <div class="planet-glow"></div>
+            <div class="planet-surface"></div>
+          </div>
+          <div class="planet-satellite">✦</div>
+        </div>
+      </section>
+
+      <section class="journey" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> ԱՐԱԳՈՒԹՅԱՆ ՍԱՆԴՈՒՂՔ</p>
+            <h2 id="journey-title">Ամեն ինչ շարժման մեջ է</h2>
+          </div>
+          <p class="section-note">ՔԱՐՏԸ ՓՈԽԻՐ ՍԼԱՔՆԵՐՈՎ ԿԱՄ ՔՍԵԼՈՎ</p>
+        </div>
+
+        <div class="carousel" aria-roledescription="կարուսել" aria-label="Արագությունների քարտեր">
+          <div class="card-stage" id="card-stage" aria-live="polite" aria-atomic="true">
+            <article class="speed-card" id="speed-card">
+              <div class="card-topline">
+                <span class="card-category" id="card-category">ԵՐԿՐԻ ՎՐԱ</span>
+                <span class="card-count" id="card-count">01 <span>/ 09</span></span>
+              </div>
+              <div class="card-content">
+                <div class="speed-illustration" id="card-illustration" aria-hidden="true">🐌</div>
+                <div class="speed-info">
+                  <p class="card-kicker" id="card-kicker">ԴԱՆԴԱՂ, ԲԱՅՑ ՀԱՍՏԱՏ</p>
+                  <h3 id="card-title">Խխունջ</h3>
+                  <div class="speed-reading">
+                    <span class="speed-value" id="card-value">0.001</span>
+                    <span class="speed-unit">մ/վ</span>
+                  </div>
+                  <p class="speed-conversion" id="card-conversion">մոտ 3.6 մ/ժ</p>
+                  <p class="card-fact" id="card-fact">
+                    Խխունջը շարժվում է դանդաղ, բայց իր փոքրիկ աշխարհում դա արդեն իսկական ճանապարհորդություն է։
+                  </p>
+                </div>
+              </div>
+              <div class="scale-block">
+                <div class="scale-labels"><span>ԴԱՆԴԱՂ</span><span>ԱՐԱԳ</span></div>
+                <div class="scale-track" role="img" aria-label="Արագության համեմատական ցուցիչ">
+                  <span class="scale-fill" id="scale-fill"></span>
+                  <span class="scale-marker" id="scale-marker"></span>
+                </div>
+              </div>
+              <div class="card-decoration" aria-hidden="true">ԱՐԱԳՈՒԹՅՈՒՆ / <span id="card-index-decoration">01</span></div>
+            </article>
+          </div>
+
+          <button class="nav-button nav-previous" id="previous-button" type="button" aria-label="Նախորդ արագությունը">
+            <span aria-hidden="true">←</span>
+          </button>
+          <button class="nav-button nav-next" id="next-button" type="button" aria-label="Հաջորդ արագությունը">
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <div class="carousel-footer">
+          <div class="carousel-dots" id="carousel-dots" aria-label="Ընտրել արագությունը"></div>
+          <p class="carousel-hint"><span aria-hidden="true">✦</span> ԱՐԱԳՈՒԹՅՈՒՆԸ ՉԱՓՎՈՒՄ Է ՄԵՏՐ/ՎԱՅՐԿՅԱՆՈՎ</p>
+        </div>
+      </section>
+
+      <section class="light-fact" aria-label="Լույսի արագության մասին">
+        <span class="light-fact-icon" aria-hidden="true">✧</span>
+        <p>Լույսն այնքան արագ է, որ մեկ վայրկյանում կարող է Երկրի շուրջը պտտվել մոտ <strong>7.5 անգամ</strong>։</p>
+        <span class="light-fact-orbit" aria-hidden="true"></span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Created by Arman Grigoryan</span>
+    </footer>
+  </body>
+</html>
